@@ -1,0 +1,13 @@
+<ul class="list-group">
+  <li *ngFor="let task of tasksList; let i = index" 
+  class="list-group-item d-flex justify-content-between align-items-center">
+    <div class="name d-flex flex-direction-row justify-content-center align-items-center"
+    (click)="changeState(i)">
+      <i class="bi" [ngClass]="{'bi-circle': !task.state,
+    'bi-check-circle-fill': task.state }"></i>
+      <p class="mx-2" [ngClass]="{
+        'realizado': task.state }">{{task.name}}</p>
+    </div>
+    <i class="bi bi-x-lg" (click)="deleteTask(i)"></i>
+  </li>
+</ul>

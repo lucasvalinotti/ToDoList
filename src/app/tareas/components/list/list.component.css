@@ -1,0 +1,30 @@
+p{
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+i{
+  font-size: 20px;
+}
+
+.bi-circle{
+  color: #aaa;
+}
+
+.bi-check-circle-fill{
+  color: #252F74;
+}
+
+.realizado{
+  transition: 0.2s;
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.bi-x-lg{
+  color: #ff0000;
+}
+
+.bi-x-lg:hover, .name:hover{
+  cursor: pointer;
+}
