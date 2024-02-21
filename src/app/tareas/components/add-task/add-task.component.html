@@ -1,10 +1,13 @@
-<h4>Agregar Tarea</h4>
 <form class="row" (ngSubmit)="addTask()">
-  <input 
-    type="text" 
-    class="form-control mb-2" 
-    placeholder="Agregar tarea..." 
-    [(ngModel)]="task.name"
-    name="name">
-  <button type="submit" class="btn btn-primary mb-3">Agregar</button>
-</form>
+  <div class="col-8">
+    <input 
+      type="text" 
+      class="form-control mb-2" 
+      placeholder="Agregar tarea..." 
+      [(ngModel)]="task.name"
+      name="name">
+  </div>
+  <div class="col-4">
+    <button type="submit" class="col-12 btn btn-primary mb-3">Agregar</button>
+  </div>
+  </form>

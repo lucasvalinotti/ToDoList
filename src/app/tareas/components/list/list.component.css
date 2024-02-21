@@ -12,7 +12,7 @@ i{
 }
 
 .bi-check-circle-fill{
-  color: #252F74;
+  color: #FF5845;
 }
 
 .realizado{
@@ -22,7 +22,13 @@ i{
 }
 
 .bi-x-lg{
-  color: #ff0000;
+  transition: 0.2s;
+  color: #aaa;
+}
+
+.bi-x-lg:hover{
+  transition: 0.2s;
+  color: #f00;
 }
 
 .bi-x-lg:hover, .name:hover{

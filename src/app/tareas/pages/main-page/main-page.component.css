@@ -1,3 +1,14 @@
+h1{
+  color: #031F5F;
+}
+
 .tareas{
+  padding: 10px;
+}
+
+.contenedor{
+  background-color: #fff;
+  min-height: 600px;
+  border-radius: 20px;
   padding: 10px;
 }

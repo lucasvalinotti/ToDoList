@@ -1,13 +1,15 @@
-<h1 class="mt-3 text-center">Lista de Tareas</h1>
-<hr>
-
-<div class="row tareas">
-  <div class="col">
-    <add-task (emitTask)="this.addTask($event)"></add-task>
-    <hr *ngIf="this.tasks.length > 0">
-    <tasks-list [tasksList]="this.tasks" 
-      (onDeleteTask)="this.deleteTask($event)"
-      (onChangeState)="this.changeState($event)">
-    </tasks-list>
+<div class="container-md contenedor mt-3">
+  <h1 class="mt-2">Lista de Tareas</h1>
+  <hr>
+  
+  <div class="row tareas">
+    <div class="col">
+      <add-task (emitTask)="this.addTask($event)"></add-task>
+      <hr *ngIf="this.tasks.length > 0">
+      <tasks-list [tasksList]="this.tasks" 
+        (onDeleteTask)="this.deleteTask($event)"
+        (onChangeState)="this.changeState($event)">
+      </tasks-list>
+    </div>
   </div>
 </div>
