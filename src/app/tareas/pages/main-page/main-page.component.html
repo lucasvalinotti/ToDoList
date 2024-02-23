@@ -12,4 +12,12 @@
       </tasks-list>
     </div>
   </div>
+  <div class="row">
+    <div class="col-4"></div>
+    <button 
+      *ngIf="this.tasks.length > 0" 
+      class="col-4 btn btn-primary mt-2"
+      (click)="this.deleteAll()">Borrar Todo</button>
+    <div class="col-4"></div>
+  </div>
 </div>

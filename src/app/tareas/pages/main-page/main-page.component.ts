@@ -25,4 +25,8 @@ export class MainPageComponent {
   public changeState(index:number){
     this.taskService.changeState(index);
   }
+
+  public deleteAll(){
+    this.taskService.deleteAll();
+  }
 }
